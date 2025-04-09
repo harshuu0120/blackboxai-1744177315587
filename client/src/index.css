@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+/* Custom base styles */
+@layer base {
+  h1 {
+    @apply text-3xl font-bold mb-4;
+  }
+  h2 {
+    @apply text-2xl font-semibold mb-3;
+  }
+  h3 {
+    @apply text-xl font-medium mb-2;
+  }
+  p {
+    @apply mb-4;
+  }
+  a {
+    @apply text-primary hover:text-primary-dark transition-colors;
+  }
+  button, .btn {
+    @apply px-4 py-2 rounded-md bg-primary text-white hover:bg-primary-dark transition-colors;
+  }
+  input, textarea, select {
+    @apply border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+  }
+}
